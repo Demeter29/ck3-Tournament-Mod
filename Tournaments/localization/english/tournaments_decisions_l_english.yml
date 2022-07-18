@@ -1,0 +1,8 @@
+﻿l_english:
+host_tournament_decision_title:0 "Host a Tournament"
+host_tournament_decision_tooltip:0 "Host a Grand Tournament"
+host_tournament_decision_desc:0 "Your subjects are craving for a grand tournament"
+host_tournament_decision_confirm_text:0 "Start the preparations"
+
+activity_tournament:0 "tournament"
+activity_tournament_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Tournament"

@@ -1,0 +1,36 @@
+host_tournament_decision = {
+	picture = "gfx\interface\illustrations\decisions/decision_host_tournament.dds"
+
+	title = host_tournament_decision_title
+	selection_tooltip = host_tournament_decision_tooltip
+	desc = host_tournament_decision_desc
+	confirm_text = host_tournament_decision_confirm_text
+
+	cost = {
+		gold = {
+			value = 10
+			multiply = {
+				value = root.primary_title.tier
+			}
+			
+		}
+	}
+
+	cooldown = {
+		years = 5
+	}
+
+	is_shown = {
+		is_landed = yes
+		highest_held_title_tier > tier_barony
+	}
+
+	effect = {
+		capital_province = {
+			spawn_activity = {
+				owner = root
+				type = activity_tournament
+			}
+		}
+	}
+}

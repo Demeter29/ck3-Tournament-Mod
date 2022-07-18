@@ -1,0 +1,35 @@
+activity_tournament = {
+	expiration_days = 300
+	days_until_auto_start = 20
+	has_activity_window = yes
+
+	valid = {
+		activity_owner = {
+			is_alive = yes
+			is_imprisioned = no
+		}
+	}
+
+	on_spawn = {
+		invite_character_to_activity = activity_owner
+		accept_invitation_for_character = activity_owner
+
+		activity_owner = {
+			every_vassal = {
+				limit = {
+					is_available_for_activity_trigger = yes
+					is_adult = yes
+				}
+				
+				scope:activity = {
+					invite_character_to_activity = prev
+				}
+				
+			}
+	
+			
+		}
+
+		
+	}
+}
