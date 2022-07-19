@@ -1,0 +1,12 @@
+﻿l_english:
+#activity
+activity_tournament:0 "tournament"
+activity_tournament_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Tournament"
+activity_tournament_owner:0 "Host"
+activity
+
+#events
+tournament.0001.opening:0 "Invitation for a tournament"
+tournament.0001.desc:0 "My dear subject, I would be honored if you would participate in my tournament"
+tournament.0001.a:0 "Yes, I will participate in your tournament"
+tournament.0001.b:0 "I must decline your invitation"

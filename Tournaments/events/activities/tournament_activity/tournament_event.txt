@@ -1,0 +1,58 @@
+namespace = tournament
+
+#vassal invitation
+tournament.0001 = { 
+	type = letter_event
+
+	
+
+	opening = {
+		desc = tournament.0001.opening
+	}
+
+	desc = tournament.0001.desc
+
+	sender = {
+		character = scope:activity.activity_owner
+		animation = admiration 
+	} 
+
+	option = {
+		name = tournament.0001.a 
+
+		scope:activity = {
+			accept_invitation_for_character = prev
+		}
+
+		stress_impact = {
+			brave = minor_stress_loss
+			craven = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 80
+			opinion_modifier = {
+				opinion_target = scope:activity.activity_owner
+			}
+		}
+	}
+
+	option = {
+		name = tournament.0001.b
+
+		scope:activity = {
+			decline_invitation_for_character = prev
+		}
+
+		stress_impact = {
+			brave = minor_stress_impact_gain
+			craven = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 20
+		}
+	}
+
+	
+}

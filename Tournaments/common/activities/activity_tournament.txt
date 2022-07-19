@@ -12,9 +12,13 @@ activity_tournament = {
 
 	on_spawn = {
 		invite_character_to_activity = activity_owner
-		accept_invitation_for_character = activity_owner
+		
+		
 
 		activity_owner = {
+			trigger_event = {
+				id = tournament.0001
+			}
 			every_vassal = {
 				limit = {
 					is_available_for_activity_trigger = yes
@@ -23,6 +27,10 @@ activity_tournament = {
 				
 				scope:activity = {
 					invite_character_to_activity = prev
+				}
+
+				trigger_event = {
+					id = tournament.0001
 				}
 				
 			}
